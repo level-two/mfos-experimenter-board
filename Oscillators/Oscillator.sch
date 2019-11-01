@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Oscillators-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -725,29 +726,25 @@ F 5 "Interconnection with the controls PCB" H 10100 1216 50  0000 C CIN "Descrip
 	1    10050 1550
 	1    0    0    1   
 $EndComp
-Text Label 10350 1350 0    50   ~ 0
+Text Label 9700 1750 0    50   ~ 0
 WSSaw
-Text Label 10350 1450 0    50   ~ 0
+Text Label 9700 1650 0    50   ~ 0
 WSPulse
 Wire Wire Line
-	10500 1350 10350 1350
+	9850 1750 9700 1750
 Wire Wire Line
-	10500 1450 10350 1450
+	9850 1650 9700 1650
 $Comp
 L power:+12V #PWR01
 U 1 1 5DBAF7C5
-P 10500 1550
-F 0 "#PWR01" H 10500 1400 50  0001 C CNN
-F 1 "+12V" V 10515 1678 50  0000 L CNN
-F 2 "" H 10500 1550 50  0001 C CNN
-F 3 "" H 10500 1550 50  0001 C CNN
-	1    10500 1550
+P 10500 1650
+F 0 "#PWR01" H 10500 1500 50  0001 C CNN
+F 1 "+12V" V 10515 1778 50  0000 L CNN
+F 2 "" H 10500 1650 50  0001 C CNN
+F 3 "" H 10500 1650 50  0001 C CNN
+	1    10500 1650
 	0    1    -1   0   
 $EndComp
-Text Label 9700 1650 0    50   ~ 0
-Out
-Text Label 9700 1750 0    50   ~ 0
-WS
 Text Label 9700 1550 0    50   ~ 0
 CV2
 Text Label 9700 1450 0    50   ~ 0
@@ -765,12 +762,12 @@ Freq
 $Comp
 L power:-12V #PWR02
 U 1 1 5DBB02B4
-P 10500 1650
-F 0 "#PWR02" H 10500 1750 50  0001 C CNN
-F 1 "-12V" V 10515 1778 50  0000 L CNN
-F 2 "" H 10500 1650 50  0001 C CNN
-F 3 "" H 10500 1650 50  0001 C CNN
-	1    10500 1650
+P 10500 1550
+F 0 "#PWR02" H 10500 1650 50  0001 C CNN
+F 1 "-12V" V 10515 1678 50  0000 L CNN
+F 2 "" H 10500 1550 50  0001 C CNN
+F 3 "" H 10500 1550 50  0001 C CNN
+	1    10500 1550
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -790,10 +787,6 @@ Wire Wire Line
 	10350 1650 10500 1650
 Wire Wire Line
 	10350 1550 10500 1550
-Wire Wire Line
-	9850 1750 9700 1750
-Wire Wire Line
-	9850 1650 9700 1650
 Wire Wire Line
 	9850 1550 9700 1550
 Wire Wire Line
@@ -892,4 +885,12 @@ F 3 "~" H 9250 3350 50  0001 C CNN
 	1    9250 3350
 	1    0    0    1   
 $EndComp
+Wire Wire Line
+	10500 1450 10350 1450
+Text Label 10350 1450 0    50   ~ 0
+Out
+Wire Wire Line
+	10500 1350 10350 1350
+Text Label 10350 1350 0    50   ~ 0
+WS
 $EndSCHEMATC
