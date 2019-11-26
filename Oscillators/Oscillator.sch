@@ -726,14 +726,14 @@ F 5 "Interconnection with the controls PCB" H 10100 1216 50  0000 C CIN "Descrip
 	1    10050 1550
 	1    0    0    1   
 $EndComp
-Text Label 9700 1750 0    50   ~ 0
-WSSaw
 Text Label 9700 1650 0    50   ~ 0
+WSSaw
+Text Label 9700 1750 0    50   ~ 0
 WSPulse
 Wire Wire Line
-	9850 1750 9700 1750
-Wire Wire Line
 	9850 1650 9700 1650
+Wire Wire Line
+	9850 1750 9700 1750
 $Comp
 L power:+12V #PWR01
 U 1 1 5DBAF7C5
