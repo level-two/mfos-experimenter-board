@@ -713,7 +713,7 @@ F 1 "1u" V 7289 1300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7488 1150 50  0001 C CNN
 F 3 "~" H 7450 1300 50  0001 C CNN
 	1    7450 1300
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	5400 1400 5250 1400
@@ -858,8 +858,8 @@ L Device:CP C10
 U 1 1 5DFB4610
 P 9700 3250
 F 0 "C10" H 9818 3296 50  0000 L CNN
-F 1 "100u" H 9818 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_Elec_10x10.2" H 9738 3100 50  0001 C CNN
+F 1 "10u" H 9818 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 9738 3100 50  0001 C CNN
 F 3 "~" H 9700 3250 50  0001 C CNN
 	1    9700 3250
 	1    0    0    -1  
@@ -869,8 +869,8 @@ L Device:CP C12
 U 1 1 5DFB53A4
 P 9700 4000
 F 0 "C12" H 9818 4046 50  0000 L CNN
-F 1 "100u" H 9818 3955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_Elec_10x10.2" H 9738 3850 50  0001 C CNN
+F 1 "10u" H 9818 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 9738 3850 50  0001 C CNN
 F 3 "~" H 9700 4000 50  0001 C CNN
 	1    9700 4000
 	1    0    0    -1  
@@ -974,112 +974,39 @@ F 3 "~" H 2150 5950 50  0001 C CNN
 	1    2150 5950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1950 5550 1800 5550
-Text Label 1800 5550 0    50   ~ 0
-cf1
-Wire Wire Line
-	1950 5650 1800 5650
-Wire Wire Line
-	1950 5750 1800 5750
-Text Label 1800 5750 0    50   ~ 0
-cv12
-Text Label 1800 5650 0    50   ~ 0
-cv11
-Wire Wire Line
-	1950 5850 1800 5850
-Text Label 1800 5850 0    50   ~ 0
-in1
-Wire Wire Line
-	1950 5950 1800 5950
-Text Label 1800 5950 0    50   ~ 0
-out1
-Wire Wire Line
-	1950 6050 1800 6050
-Text Label 1800 6050 0    50   ~ 0
-res11
-Wire Wire Line
-	1950 6150 1800 6150
 Text Label 1800 6150 0    50   ~ 0
+cv12
+Text Label 2600 6150 2    50   ~ 0
+cv11
+Text Label 2450 6250 0    50   ~ 0
+in1
+Text Label 2450 6350 0    50   ~ 0
+out1
+Text Label 1800 6350 0    50   ~ 0
+res11
+Text Label 1800 6250 0    50   ~ 0
 res12
-Wire Wire Line
-	2600 5550 2450 5550
-Text Label 2450 5550 0    50   ~ 0
-cf2
-Wire Wire Line
-	2600 5650 2450 5650
 Wire Wire Line
 	2600 5750 2450 5750
 Text Label 2450 5750 0    50   ~ 0
-cv22
-Text Label 2450 5650 0    50   ~ 0
 cv21
 Wire Wire Line
-	2600 5850 2450 5850
-Text Label 2450 5850 0    50   ~ 0
+	2600 5550 2450 5550
+Text Label 2450 5550 0    50   ~ 0
 in2
-Wire Wire Line
-	2600 5950 2450 5950
-Text Label 2450 5950 0    50   ~ 0
-out2
-Wire Wire Line
-	2600 6050 2450 6050
-Text Label 2450 6050 0    50   ~ 0
-res21
-Wire Wire Line
-	2600 6150 2450 6150
-Text Label 2450 6150 0    50   ~ 0
-res22
-$Comp
-L power:GND #PWR031
-U 1 1 5DFF78C4
-P 1900 6250
-F 0 "#PWR031" H 1900 6000 50  0001 C CNN
-F 1 "GND" H 1905 6077 50  0000 C CNN
-F 2 "" H 1900 6250 50  0001 C CNN
-F 3 "" H 1900 6250 50  0001 C CNN
-	1    1900 6250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR032
-U 1 1 5DFFBD13
-P 2500 6250
-F 0 "#PWR032" H 2500 6000 50  0001 C CNN
-F 1 "GND" H 2505 6077 50  0000 C CNN
-F 2 "" H 2500 6250 50  0001 C CNN
-F 3 "" H 2500 6250 50  0001 C CNN
-	1    2500 6250
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:-12V #PWR033
 U 1 1 5E0007FF
-P 1900 6350
-F 0 "#PWR033" H 1900 6450 50  0001 C CNN
-F 1 "-12V" H 1915 6523 50  0000 C CNN
-F 2 "" H 1900 6350 50  0001 C CNN
-F 3 "" H 1900 6350 50  0001 C CNN
-	1    1900 6350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+12V #PWR034
-U 1 1 5E004C4A
-P 2500 6350
-F 0 "#PWR034" H 2500 6200 50  0001 C CNN
-F 1 "+12V" H 2515 6523 50  0000 C CNN
-F 2 "" H 2500 6350 50  0001 C CNN
-F 3 "" H 2500 6350 50  0001 C CNN
-	1    2500 6350
-	0    1    1    0   
+P 2500 5850
+F 0 "#PWR033" H 2500 5950 50  0001 C CNN
+F 1 "-12V" H 2515 6023 50  0000 C CNN
+F 2 "" H 2500 5850 50  0001 C CNN
+F 3 "" H 2500 5850 50  0001 C CNN
+	1    2500 5850
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	1900 6350 1950 6350
-Wire Wire Line
-	2450 6250 2500 6250
-Wire Wire Line
-	2450 6350 2500 6350
+	2450 5950 2500 5950
 $Comp
 L Connector_Generic:Conn_01x03 J2
 U 1 1 5E01C7A1
@@ -1241,8 +1168,6 @@ Wire Wire Line
 	9300 1800 9500 1800
 Wire Wire Line
 	1950 3450 2900 3450
-Wire Wire Line
-	1900 6250 1950 6250
 $Comp
 L power:+12V #PWR012
 U 1 1 5DFA7A54
@@ -1300,4 +1225,79 @@ F 3 "~" H 9250 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9250 5000 9250 4950
+$Comp
+L power:GND #PWR032
+U 1 1 5DFFBD13
+P 2500 5950
+F 0 "#PWR032" H 2500 5700 50  0001 C CNN
+F 1 "GND" H 2505 5777 50  0000 C CNN
+F 2 "" H 2500 5950 50  0001 C CNN
+F 3 "" H 2500 5950 50  0001 C CNN
+	1    2500 5950
+	0    -1   -1   0   
+$EndComp
+Text Label 2450 5650 0    50   ~ 0
+out2
+Wire Wire Line
+	2600 5650 2450 5650
+Text Label 1800 5850 0    50   ~ 0
+cv22
+Wire Wire Line
+	1950 5850 1800 5850
+Text Label 1800 5750 0    50   ~ 0
+cf2
+Wire Wire Line
+	1950 5750 1800 5750
+$Comp
+L power:+12V #PWR034
+U 1 1 5E004C4A
+P 2500 6050
+F 0 "#PWR034" H 2500 5900 50  0001 C CNN
+F 1 "+12V" H 2515 6223 50  0000 C CNN
+F 2 "" H 2500 6050 50  0001 C CNN
+F 3 "" H 2500 6050 50  0001 C CNN
+	1    2500 6050
+	0    1    1    0   
+$EndComp
+Text Label 1950 6050 2    50   ~ 0
+cf1
+$Comp
+L power:GND #PWR031
+U 1 1 5DFF78C4
+P 1850 5950
+F 0 "#PWR031" H 1850 5700 50  0001 C CNN
+F 1 "GND" H 1855 5777 50  0000 C CNN
+F 2 "" H 1850 5950 50  0001 C CNN
+F 3 "" H 1850 5950 50  0001 C CNN
+	1    1850 5950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1950 6050 1800 6050
+Wire Wire Line
+	2450 6150 2600 6150
+Wire Wire Line
+	1800 6150 1950 6150
+Wire Wire Line
+	2450 6250 2600 6250
+Wire Wire Line
+	2450 6350 2600 6350
+Wire Wire Line
+	1800 6250 1950 6250
+Wire Wire Line
+	1800 6350 1950 6350
+Wire Wire Line
+	2450 6050 2500 6050
+Wire Wire Line
+	1850 5950 1950 5950
+Text Label 1800 5550 0    50   ~ 0
+res22
+Wire Wire Line
+	1800 5550 1950 5550
+Wire Wire Line
+	2450 5850 2500 5850
+Text Label 1800 5650 0    50   ~ 0
+res21
+Wire Wire Line
+	1950 5650 1800 5650
 $EndSCHEMATC
