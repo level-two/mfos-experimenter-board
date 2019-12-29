@@ -462,24 +462,24 @@ Wire Wire Line
 	3200 3000 3200 2600
 $Comp
 L Amplifier_Operational:TL074 U1
-U 3 1 5DFA79DC
+U 4 1 5DFA79DC
 P 6650 1300
 F 0 "U1" H 6650 1667 50  0000 C CNN
 F 1 "TL074" H 6650 1576 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6600 1400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6700 1500 50  0001 C CNN
-	3    6650 1300
+	4    6650 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:TL074 U1
-U 4 1 5DFA79E2
+U 3 1 5DFA79E2
 P 6650 3550
 F 0 "U1" H 6650 3917 50  0000 C CNN
 F 1 "TL074" H 6650 3826 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6600 3650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6700 3750 50  0001 C CNN
-	4    6650 3550
+	3    6650 3550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -991,8 +991,8 @@ Wire Wire Line
 Text Label 2450 5750 0    50   ~ 0
 cv21
 Wire Wire Line
-	2600 5550 2450 5550
-Text Label 2450 5550 0    50   ~ 0
+	2600 5650 2450 5650
+Text Label 2450 5650 0    50   ~ 0
 in2
 $Comp
 L power:-12V #PWR033
@@ -1236,10 +1236,10 @@ F 3 "" H 2500 5950 50  0001 C CNN
 	1    2500 5950
 	0    -1   -1   0   
 $EndComp
-Text Label 2450 5650 0    50   ~ 0
+Text Label 2450 5550 0    50   ~ 0
 out2
 Wire Wire Line
-	2600 5650 2450 5650
+	2600 5550 2450 5550
 Text Label 1800 5850 0    50   ~ 0
 cv22
 Wire Wire Line
@@ -1290,14 +1290,14 @@ Wire Wire Line
 	2450 6050 2500 6050
 Wire Wire Line
 	1850 5950 1950 5950
-Text Label 1800 5550 0    50   ~ 0
-res22
-Wire Wire Line
-	1800 5550 1950 5550
 Wire Wire Line
 	2450 5850 2500 5850
-Text Label 1800 5650 0    50   ~ 0
+Wire Wire Line
+	1950 5550 1800 5550
+Text Label 1800 5550 0    50   ~ 0
 res21
 Wire Wire Line
-	1950 5650 1800 5650
+	1800 5650 1950 5650
+Text Label 1800 5650 0    50   ~ 0
+res22
 $EndSCHEMATC
