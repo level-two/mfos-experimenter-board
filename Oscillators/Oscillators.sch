@@ -126,15 +126,15 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DE335DA
-P 9800 4900
+P 9800 5100
 AR Path="/5DB9B31E/5DE335DA" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE335DA" Ref="#PWR?"  Part="1" 
 AR Path="/5DE335DA" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 9800 4650 50  0001 C CNN
-F 1 "GND" V 9805 4772 50  0000 R CNN
-F 2 "" H 9800 4900 50  0001 C CNN
-F 3 "" H 9800 4900 50  0001 C CNN
-	1    9800 4900
+F 0 "#PWR013" H 9800 4850 50  0001 C CNN
+F 1 "GND" V 9805 4972 50  0000 R CNN
+F 2 "" H 9800 5100 50  0001 C CNN
+F 3 "" H 9800 5100 50  0001 C CNN
+	1    9800 5100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -154,15 +154,15 @@ $EndComp
 $Comp
 L power:-12V #PWR?
 U 1 1 5DE335E6
-P 9800 5100
+P 9800 4900
 AR Path="/5DB9B31E/5DE335E6" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE335E6" Ref="#PWR?"  Part="1" 
 AR Path="/5DE335E6" Ref="#PWR015"  Part="1" 
-F 0 "#PWR015" H 9800 5200 50  0001 C CNN
-F 1 "-12V" V 9815 5228 50  0000 L CNN
-F 2 "" H 9800 5100 50  0001 C CNN
-F 3 "" H 9800 5100 50  0001 C CNN
-	1    9800 5100
+F 0 "#PWR015" H 9800 5000 50  0001 C CNN
+F 1 "-12V" V 9815 5028 50  0000 L CNN
+F 2 "" H 9800 4900 50  0001 C CNN
+F 3 "" H 9800 4900 50  0001 C CNN
+	1    9800 4900
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -210,15 +210,15 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DE335FE
-P 10250 5800
+P 10250 6000
 AR Path="/5DB9B31E/5DE335FE" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE335FE" Ref="#PWR?"  Part="1" 
 AR Path="/5DE335FE" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 10250 5550 50  0001 C CNN
-F 1 "GND" V 10255 5672 50  0000 R CNN
-F 2 "" H 10250 5800 50  0001 C CNN
-F 3 "" H 10250 5800 50  0001 C CNN
-	1    10250 5800
+F 0 "#PWR020" H 10250 5750 50  0001 C CNN
+F 1 "GND" V 10255 5872 50  0000 R CNN
+F 2 "" H 10250 6000 50  0001 C CNN
+F 3 "" H 10250 6000 50  0001 C CNN
+	1    10250 6000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -238,15 +238,15 @@ $EndComp
 $Comp
 L power:-12V #PWR?
 U 1 1 5DE3360A
-P 10250 6000
+P 10250 5800
 AR Path="/5DB9B31E/5DE3360A" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE3360A" Ref="#PWR?"  Part="1" 
 AR Path="/5DE3360A" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 10250 6100 50  0001 C CNN
-F 1 "-12V" V 10265 6128 50  0000 L CNN
-F 2 "" H 10250 6000 50  0001 C CNN
-F 3 "" H 10250 6000 50  0001 C CNN
-	1    10250 6000
+F 0 "#PWR022" H 10250 5900 50  0001 C CNN
+F 1 "-12V" V 10265 5928 50  0000 L CNN
+F 2 "" H 10250 5800 50  0001 C CNN
+F 3 "" H 10250 5800 50  0001 C CNN
+	1    10250 5800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -365,7 +365,7 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Horizontal" H 10450 5900 
 F 3 "~" H 10450 5900 50  0001 C CNN
 F 4 "Mounted at the bottom side" H 10368 5667 50  0000 C CNN "Note"
 	1    10450 5900
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
@@ -380,7 +380,7 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Horizontal" H 10450 5000 
 F 3 "~" H 10450 5000 50  0001 C CNN
 F 4 "Mounted at the bottom side" H 10368 4767 50  0000 C CNN "Note"
 	1    10450 5000
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Text Label 7300 2450 0    50   ~ 0
 WS1
@@ -748,11 +748,11 @@ F 3 "~" H 2000 2100 50  0001 C CNN
 	1    2000 2100
 	1    0    0    -1  
 $EndComp
-Text Label 9750 1900 2    50   ~ 0
+Text Label 10250 2700 0    50   ~ 0
 WSPulse1
-Text Label 9600 2600 0    50   ~ 0
+Text Label 10400 2000 2    50   ~ 0
 CV12
-Text Label 9600 2500 0    50   ~ 0
+Text Label 10400 2100 2    50   ~ 0
 CV11
 Text Label 1050 2100 0    50   ~ 0
 CV12
@@ -763,13 +763,13 @@ Wire Wire Line
 Text Label 1050 1450 0    50   ~ 0
 Freq1
 Wire Wire Line
-	10250 1900 10400 1900
+	9750 2700 9600 2700
 Wire Wire Line
-	10250 2700 10400 2700
+	9750 1900 9600 1900
 Wire Wire Line
-	9750 2600 9600 2600
+	10250 2000 10400 2000
 Wire Wire Line
-	9750 2500 9600 2500
+	10250 2100 10400 2100
 Wire Wire Line
 	1300 2100 1050 2100
 Wire Wire Line
@@ -887,7 +887,7 @@ F 3 "~" H 8800 3300 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	10250 2200 10400 2200
+	9750 2400 9600 2400
 $Comp
 L power:GND #PWR?
 U 1 1 5DE84D7F
@@ -1478,14 +1478,14 @@ F 3 "" H 7500 3450 50  0001 C CNN
 	1    7500 3450
 	1    0    0    -1  
 $EndComp
-Text Label 10250 2500 0    50   ~ 0
+Text Label 9750 2100 2    50   ~ 0
 CV21
-Text Label 10250 2400 0    50   ~ 0
+Text Label 9750 2200 2    50   ~ 0
 Freq2
 Wire Wire Line
-	10400 2500 10250 2500
+	9600 2100 9750 2100
 Wire Wire Line
-	10250 2400 10400 2400
+	9750 2200 9600 2200
 $Comp
 L Amplifier_Operational:TL074 U1
 U 4 1 5DED19E2
@@ -1641,8 +1641,8 @@ L Device:CP C5
 U 1 1 5DED9E42
 P 7500 3300
 F 0 "C5" H 7618 3346 50  0000 L CNN
-F 1 "4.7u" H 7618 3255 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 7538 3150 50  0001 C CNN
+F 1 "10u" H 7618 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 7538 3150 50  0001 C CNN
 F 3 "~" H 7500 3300 50  0001 C CNN
 	1    7500 3300
 	1    0    0    -1  
@@ -1652,8 +1652,8 @@ L Device:CP C6
 U 1 1 5DEDB204
 P 7900 3300
 F 0 "C6" H 7782 3254 50  0000 R CNN
-F 1 "4.7u" H 7782 3345 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 7938 3150 50  0001 C CNN
+F 1 "10u" H 7782 3345 50  0000 R CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 7938 3150 50  0001 C CNN
 F 3 "~" H 7900 3300 50  0001 C CNN
 	1    7900 3300
 	-1   0    0    1   
@@ -1672,107 +1672,110 @@ F 3 "" H 7900 3450 50  0001 C CNN
 	1    7900 3450
 	1    0    0    -1  
 $EndComp
-Text Label 10250 2100 0    50   ~ 0
+Text Label 9750 2500 2    50   ~ 0
 WS2
 Wire Wire Line
-	10400 2100 10250 2100
-Text Label 10250 2000 0    50   ~ 0
+	9600 2500 9750 2500
+Text Label 9750 2600 2    50   ~ 0
 Out2
 Wire Wire Line
-	10400 2000 10250 2000
-Text Label 10400 2200 2    50   ~ 0
+	9600 2600 9750 2600
+Text Label 9600 2400 0    50   ~ 0
 WS1
-Text Label 10400 2300 2    50   ~ 0
+Text Label 9600 2300 0    50   ~ 0
 Out1
 Wire Wire Line
-	10250 2300 10400 2300
+	9750 2300 9600 2300
 $Comp
 L power:GND #PWR?
 U 1 1 5DE3374C
-P 9450 2400
+P 10550 2200
 AR Path="/5DB9B31E/5DE3374C" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE3374C" Ref="#PWR?"  Part="1" 
 AR Path="/5DE3374C" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 9450 2150 50  0001 C CNN
-F 1 "GND" H 9455 2227 50  0000 C CNN
-F 2 "" H 9450 2400 50  0001 C CNN
-F 3 "" H 9450 2400 50  0001 C CNN
-	1    9450 2400
-	0    1    1    0   
+F 0 "#PWR07" H 10550 1950 50  0001 C CNN
+F 1 "GND" H 10555 2027 50  0000 C CNN
+F 2 "" H 10550 2200 50  0001 C CNN
+F 3 "" H 10550 2200 50  0001 C CNN
+	1    10550 2200
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:-12V #PWR?
 U 1 1 5DE33746
-P 10400 2700
+P 9600 1900
 AR Path="/5DB9B31E/5DE33746" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE33746" Ref="#PWR?"  Part="1" 
 AR Path="/5DE33746" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 10400 2800 50  0001 C CNN
-F 1 "-12V" V 10415 2828 50  0000 L CNN
-F 2 "" H 10400 2700 50  0001 C CNN
-F 3 "" H 10400 2700 50  0001 C CNN
-	1    10400 2700
-	0    1    -1   0   
+F 0 "#PWR03" H 9600 2000 50  0001 C CNN
+F 1 "-12V" V 9615 2028 50  0000 L CNN
+F 2 "" H 9600 1900 50  0001 C CNN
+F 3 "" H 9600 1900 50  0001 C CNN
+	1    9600 1900
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 5DE33739
-P 10400 1900
+P 9600 2700
 AR Path="/5DB9B31E/5DE33739" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE33739" Ref="#PWR?"  Part="1" 
 AR Path="/5DE33739" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 10400 1750 50  0001 C CNN
-F 1 "+12V" V 10415 2028 50  0000 L CNN
-F 2 "" H 10400 1900 50  0001 C CNN
-F 3 "" H 10400 1900 50  0001 C CNN
-	1    10400 1900
-	0    1    -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J?
-U 1 1 5DE3372F
-P 10050 2300
-AR Path="/5DB9B31E/5DE3372F" Ref="J?"  Part="1" 
-AR Path="/5DE037B7/5DE3372F" Ref="J?"  Part="1" 
-AR Path="/5DE3372F" Ref="J1"  Part="1" 
-F 0 "J1" H 10100 1693 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 10100 1784 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x09_P2.54mm_Horizontal" H 10050 2300 50  0001 C CNN
-F 3 "~" H 10050 2300 50  0001 C CNN
-F 4 "Mounted at the bottom side" H 10100 1875 50  0001 C CNB "Note"
-F 5 "Interconnection with the controls PCB" H 10100 1966 50  0001 C CIN "Description"
-	1    10050 2300
-	-1   0    0    -1  
+F 0 "#PWR04" H 9600 2550 50  0001 C CNN
+F 1 "+12V" V 9615 2828 50  0000 L CNN
+F 2 "" H 9600 2700 50  0001 C CNN
+F 3 "" H 9600 2700 50  0001 C CNN
+	1    9600 2700
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	9750 1900 9600 1900
+	10250 2700 10400 2700
 Wire Wire Line
-	10400 2600 10250 2600
-Text Label 10250 2600 0    50   ~ 0
+	9600 2000 9750 2000
+Text Label 9750 2000 2    50   ~ 0
 CV22
 Wire Wire Line
-	9450 2400 9750 2400
+	10550 2200 10250 2200
 Wire Wire Line
 	8700 1750 8600 1750
 Wire Wire Line
 	8700 1750 8900 1750
 Connection ~ 8700 1750
-Text Label 9750 2300 2    50   ~ 0
+Text Label 10250 2300 0    50   ~ 0
 WSPulse2
 Wire Wire Line
-	9600 2300 9750 2300
+	10400 2300 10250 2300
 Wire Wire Line
 	8700 2450 8700 1750
 Wire Wire Line
-	9600 2700 9750 2700
-Text Label 9600 2700 0    50   ~ 0
+	10400 1900 10250 1900
+Text Label 10400 1900 2    50   ~ 0
 Freq1
 Wire Wire Line
-	9600 2200 9750 2200
-Text Label 9750 2200 2    50   ~ 0
+	10400 2400 10250 2400
+Text Label 10250 2400 0    50   ~ 0
 WSSaw2
 Wire Wire Line
-	9600 2000 9750 2000
-Text Label 9750 2000 2    50   ~ 0
+	10400 2600 10250 2600
+Text Label 10250 2600 0    50   ~ 0
 WSSaw1
+$Comp
+L Connector_Generic:Conn_02x09_Odd_Even J?
+U 1 1 5DE3372F
+P 9950 2300
+AR Path="/5DB9B31E/5DE3372F" Ref="J?"  Part="1" 
+AR Path="/5DE037B7/5DE3372F" Ref="J?"  Part="1" 
+AR Path="/5DE3372F" Ref="J1"  Part="1" 
+F 0 "J1" H 10000 1693 50  0000 C CNN
+F 1 "Conn_02x09_Odd_Even" H 10000 1784 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x09_P2.54mm_Horizontal" H 9950 2300 50  0001 C CNN
+F 3 "~" H 9950 2300 50  0001 C CNN
+F 4 "Mounted at the bottom side" H 10000 1875 50  0001 C CNB "Note"
+F 5 "Interconnection with the controls PCB" H 10000 1966 50  0001 C CIN "Description"
+	1    9950 2300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10400 2500
+Wire Wire Line
+	10400 2500 10250 2500
 $EndSCHEMATC
