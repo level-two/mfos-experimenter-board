@@ -748,12 +748,8 @@ F 3 "~" H 2000 2100 50  0001 C CNN
 	1    2000 2100
 	1    0    0    -1  
 $EndComp
-Text Label 10250 2700 0    50   ~ 0
-WSPulse1
 Text Label 10400 2000 2    50   ~ 0
 CV12
-Text Label 10400 2100 2    50   ~ 0
-CV11
 Text Label 1050 2100 0    50   ~ 0
 CV12
 Text Label 1050 1750 0    50   ~ 0
@@ -763,13 +759,9 @@ Wire Wire Line
 Text Label 1050 1450 0    50   ~ 0
 Freq1
 Wire Wire Line
-	9750 2700 9600 2700
-Wire Wire Line
-	9750 1900 9600 1900
+	10250 2400 10400 2400
 Wire Wire Line
 	10250 2000 10400 2000
-Wire Wire Line
-	10250 2100 10400 2100
 Wire Wire Line
 	1300 2100 1050 2100
 Wire Wire Line
@@ -1478,12 +1470,12 @@ F 3 "" H 7500 3450 50  0001 C CNN
 	1    7500 3450
 	1    0    0    -1  
 $EndComp
-Text Label 9750 2100 2    50   ~ 0
+Text Label 10400 2100 2    50   ~ 0
 CV21
 Text Label 9750 2200 2    50   ~ 0
 Freq2
 Wire Wire Line
-	9600 2100 9750 2100
+	10250 2100 10400 2100
 Wire Wire Line
 	9750 2200 9600 2200
 $Comp
@@ -1672,14 +1664,6 @@ F 3 "" H 7900 3450 50  0001 C CNN
 	1    7900 3450
 	1    0    0    -1  
 $EndComp
-Text Label 9750 2500 2    50   ~ 0
-WS2
-Wire Wire Line
-	9600 2500 9750 2500
-Text Label 9750 2600 2    50   ~ 0
-Out2
-Wire Wire Line
-	9600 2600 9750 2600
 Text Label 9600 2400 0    50   ~ 0
 WS1
 Text Label 9600 2300 0    50   ~ 0
@@ -1689,76 +1673,46 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5DE3374C
-P 10550 2200
+P 10400 2200
 AR Path="/5DB9B31E/5DE3374C" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE3374C" Ref="#PWR?"  Part="1" 
 AR Path="/5DE3374C" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 10550 1950 50  0001 C CNN
-F 1 "GND" H 10555 2027 50  0000 C CNN
-F 2 "" H 10550 2200 50  0001 C CNN
-F 3 "" H 10550 2200 50  0001 C CNN
-	1    10550 2200
+F 0 "#PWR07" H 10400 1950 50  0001 C CNN
+F 1 "GND" H 10405 2027 50  0000 C CNN
+F 2 "" H 10400 2200 50  0001 C CNN
+F 3 "" H 10400 2200 50  0001 C CNN
+	1    10400 2200
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:-12V #PWR?
-U 1 1 5DE33746
-P 9600 1900
-AR Path="/5DB9B31E/5DE33746" Ref="#PWR?"  Part="1" 
-AR Path="/5DE037B7/5DE33746" Ref="#PWR?"  Part="1" 
-AR Path="/5DE33746" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 9600 2000 50  0001 C CNN
-F 1 "-12V" V 9615 2028 50  0000 L CNN
-F 2 "" H 9600 1900 50  0001 C CNN
-F 3 "" H 9600 1900 50  0001 C CNN
-	1    9600 1900
-	0    -1   1    0   
 $EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 5DE33739
-P 9600 2700
+P 10400 2400
 AR Path="/5DB9B31E/5DE33739" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE33739" Ref="#PWR?"  Part="1" 
 AR Path="/5DE33739" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 9600 2550 50  0001 C CNN
-F 1 "+12V" V 9615 2828 50  0000 L CNN
-F 2 "" H 9600 2700 50  0001 C CNN
-F 3 "" H 9600 2700 50  0001 C CNN
-	1    9600 2700
-	0    -1   1    0   
+F 0 "#PWR04" H 10400 2250 50  0001 C CNN
+F 1 "+12V" V 10415 2528 50  0000 L CNN
+F 2 "" H 10400 2400 50  0001 C CNN
+F 3 "" H 10400 2400 50  0001 C CNN
+	1    10400 2400
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	10250 2700 10400 2700
-Wire Wire Line
-	9600 2000 9750 2000
-Text Label 9750 2000 2    50   ~ 0
+	9600 2100 9750 2100
+Text Label 9750 2100 2    50   ~ 0
 CV22
-Wire Wire Line
-	10550 2200 10250 2200
 Wire Wire Line
 	8700 1750 8600 1750
 Wire Wire Line
 	8700 1750 8900 1750
 Connection ~ 8700 1750
-Text Label 10250 2300 0    50   ~ 0
+Text Label 10250 1900 0    50   ~ 0
 WSPulse2
 Wire Wire Line
-	10400 2300 10250 2300
+	10400 1900 10250 1900
 Wire Wire Line
 	8700 2450 8700 1750
-Wire Wire Line
-	10400 1900 10250 1900
-Text Label 10400 1900 2    50   ~ 0
-Freq1
-Wire Wire Line
-	10400 2400 10250 2400
-Text Label 10250 2400 0    50   ~ 0
-WSSaw2
-Wire Wire Line
-	10400 2600 10250 2600
-Text Label 10250 2600 0    50   ~ 0
-WSSaw1
 $Comp
 L Connector_Generic:Conn_02x09_Odd_Even J?
 U 1 1 5DE3372F
@@ -1775,7 +1729,50 @@ F 5 "Interconnection with the controls PCB" H 10000 1966 50  0001 C CIN "Descrip
 	1    9950 2300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10400 2500
+Text Label 9600 1900 0    50   ~ 0
+Freq1
 Wire Wire Line
-	10400 2500 10250 2500
+	9600 1900 9750 1900
+$Comp
+L power:-12V #PWR?
+U 1 1 5DE33746
+P 10400 2300
+AR Path="/5DB9B31E/5DE33746" Ref="#PWR?"  Part="1" 
+AR Path="/5DE037B7/5DE33746" Ref="#PWR?"  Part="1" 
+AR Path="/5DE33746" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 10400 2400 50  0001 C CNN
+F 1 "-12V" V 10415 2428 50  0000 L CNN
+F 2 "" H 10400 2300 50  0001 C CNN
+F 3 "" H 10400 2300 50  0001 C CNN
+	1    10400 2300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10250 2300 10400 2300
+Wire Wire Line
+	9750 2700 9600 2700
+Text Label 9600 2700 0    50   ~ 0
+WSSaw1
+Wire Wire Line
+	10250 2200 10400 2200
+Text Label 9600 2500 0    50   ~ 0
+WSSaw2
+Wire Wire Line
+	9750 2500 9600 2500
+Wire Wire Line
+	10250 2500 10400 2500
+Text Label 10400 2500 2    50   ~ 0
+Out2
+Wire Wire Line
+	9600 2600 9750 2600
+Text Label 9750 2600 2    50   ~ 0
+WS2
+Wire Wire Line
+	10250 2600 10400 2600
+Text Label 10250 2600 0    50   ~ 0
+WSPulse1
+Text Label 9750 2000 2    50   ~ 0
+CV11
+Wire Wire Line
+	9600 2000 9750 2000
 $EndSCHEMATC
