@@ -963,17 +963,6 @@ F 3 "" H 9700 3850 50  0001 C CNN
 	1    9700 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J3
-U 1 1 5DFCDC5C
-P 2150 5950
-F 0 "J3" H 2200 6567 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 2200 6476 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Horizontal" H 2150 5950 50  0001 C CNN
-F 3 "~" H 2150 5950 50  0001 C CNN
-	1    2150 5950
-	1    0    0    -1  
-$EndComp
 Text Label 1800 6150 0    50   ~ 0
 cv12
 Text Label 2600 6150 2    50   ~ 0
@@ -997,13 +986,13 @@ in2
 $Comp
 L power:-12V #PWR033
 U 1 1 5E0007FF
-P 2500 5850
-F 0 "#PWR033" H 2500 5950 50  0001 C CNN
-F 1 "-12V" H 2515 6023 50  0000 C CNN
-F 2 "" H 2500 5850 50  0001 C CNN
-F 3 "" H 2500 5850 50  0001 C CNN
-	1    2500 5850
-	0    1    -1   0   
+P 1900 5850
+F 0 "#PWR033" H 1900 5950 50  0001 C CNN
+F 1 "-12V" H 1915 6023 50  0000 C CNN
+F 2 "" H 1900 5850 50  0001 C CNN
+F 3 "" H 1900 5850 50  0001 C CNN
+	1    1900 5850
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	2450 5950 2500 5950
@@ -1240,10 +1229,10 @@ Text Label 2450 5550 0    50   ~ 0
 out2
 Wire Wire Line
 	2600 5550 2450 5550
-Text Label 1800 5850 0    50   ~ 0
+Text Label 2450 5850 0    50   ~ 0
 cv22
 Wire Wire Line
-	1950 5850 1800 5850
+	2600 5850 2450 5850
 Text Label 1800 5750 0    50   ~ 0
 cf2
 Wire Wire Line
@@ -1251,15 +1240,15 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR034
 U 1 1 5E004C4A
-P 2500 6050
-F 0 "#PWR034" H 2500 5900 50  0001 C CNN
-F 1 "+12V" H 2515 6223 50  0000 C CNN
-F 2 "" H 2500 6050 50  0001 C CNN
-F 3 "" H 2500 6050 50  0001 C CNN
-	1    2500 6050
-	0    1    1    0   
+P 1900 6050
+F 0 "#PWR034" H 1900 5900 50  0001 C CNN
+F 1 "+12V" H 1915 6223 50  0000 C CNN
+F 2 "" H 1900 6050 50  0001 C CNN
+F 3 "" H 1900 6050 50  0001 C CNN
+	1    1900 6050
+	0    -1   -1   0   
 $EndComp
-Text Label 1950 6050 2    50   ~ 0
+Text Label 2600 6050 2    50   ~ 0
 cf1
 $Comp
 L power:GND #PWR031
@@ -1273,7 +1262,7 @@ F 3 "" H 1850 5950 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	1950 6050 1800 6050
+	2600 6050 2450 6050
 Wire Wire Line
 	2450 6150 2600 6150
 Wire Wire Line
@@ -1287,11 +1276,11 @@ Wire Wire Line
 Wire Wire Line
 	1800 6350 1950 6350
 Wire Wire Line
-	2450 6050 2500 6050
+	1950 6050 1900 6050
 Wire Wire Line
 	1850 5950 1950 5950
 Wire Wire Line
-	2450 5850 2500 5850
+	1950 5850 1900 5850
 Wire Wire Line
 	1950 5550 1800 5550
 Text Label 1800 5550 0    50   ~ 0
@@ -1300,4 +1289,17 @@ Wire Wire Line
 	1800 5650 1950 5650
 Text Label 1800 5650 0    50   ~ 0
 res22
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J3
+U 1 1 5DFCDC5C
+P 2150 5950
+F 0 "J3" H 2200 6567 50  0000 C CNN
+F 1 "Conn_02x09_Odd_Even" H 2200 6476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Horizontal" H 2150 5950 50  0001 C CNN
+F 3 "~" H 2150 5950 50  0001 C CNN
+	1    2150 5950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1950 6450
+NoConn ~ 2450 6450
 $EndSCHEMATC

@@ -734,7 +734,7 @@ F 3 "~" H 2000 2100 50  0001 C CNN
 	1    2000 2100
 	1    0    0    -1  
 $EndComp
-Text Label 10400 2000 2    50   ~ 0
+Text Label 10600 2650 2    50   ~ 0
 CV12
 Text Label 1050 2100 0    50   ~ 0
 CV12
@@ -745,9 +745,9 @@ Wire Wire Line
 Text Label 1050 1450 0    50   ~ 0
 Freq1
 Wire Wire Line
-	10250 2700 10400 2700
+	10450 1950 10600 1950
 Wire Wire Line
-	10250 2000 10400 2000
+	10450 2650 10600 2650
 Wire Wire Line
 	1300 2100 1050 2100
 Wire Wire Line
@@ -865,7 +865,7 @@ F 3 "~" H 8800 3300 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	9750 2400 9600 2400
+	9950 2250 9800 2250
 $Comp
 L power:GND #PWR?
 U 1 1 5DE84D7F
@@ -1442,14 +1442,14 @@ F 3 "" H 7500 3450 50  0001 C CNN
 	1    7500 3450
 	1    0    0    -1  
 $EndComp
-Text Label 10400 2100 2    50   ~ 0
+Text Label 10600 2550 2    50   ~ 0
 CV21
-Text Label 9750 2200 2    50   ~ 0
+Text Label 9950 2450 2    50   ~ 0
 Freq2
 Wire Wire Line
-	10250 2100 10400 2100
+	10450 2550 10600 2550
 Wire Wire Line
-	9750 2200 9600 2200
+	9950 2450 9800 2450
 $Comp
 L Amplifier_Operational:TL074 U1
 U 4 1 5DED19E2
@@ -1636,133 +1636,133 @@ F 3 "" H 7900 3450 50  0001 C CNN
 	1    7900 3450
 	1    0    0    -1  
 $EndComp
-Text Label 9600 2400 0    50   ~ 0
+Text Label 9800 2250 0    50   ~ 0
 WS1
-Text Label 10250 2400 0    50   ~ 0
+Text Label 10450 2250 0    50   ~ 0
 Out1
 Wire Wire Line
-	10400 2400 10250 2400
+	10600 2250 10450 2250
 $Comp
 L power:GND #PWR?
 U 1 1 5DE3374C
-P 10400 2200
+P 10600 2450
 AR Path="/5DB9B31E/5DE3374C" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE3374C" Ref="#PWR?"  Part="1" 
 AR Path="/5DE3374C" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 10400 1950 50  0001 C CNN
-F 1 "GND" H 10405 2027 50  0000 C CNN
-F 2 "" H 10400 2200 50  0001 C CNN
-F 3 "" H 10400 2200 50  0001 C CNN
-	1    10400 2200
-	0    -1   -1   0   
+F 0 "#PWR07" H 10600 2200 50  0001 C CNN
+F 1 "GND" H 10605 2277 50  0000 C CNN
+F 2 "" H 10600 2450 50  0001 C CNN
+F 3 "" H 10600 2450 50  0001 C CNN
+	1    10600 2450
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 5DE33739
-P 10400 2700
+P 10600 1950
 AR Path="/5DB9B31E/5DE33739" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE33739" Ref="#PWR?"  Part="1" 
 AR Path="/5DE33739" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 10400 2550 50  0001 C CNN
-F 1 "+12V" V 10415 2828 50  0000 L CNN
-F 2 "" H 10400 2700 50  0001 C CNN
-F 3 "" H 10400 2700 50  0001 C CNN
-	1    10400 2700
-	0    1    -1   0   
+F 0 "#PWR04" H 10600 1800 50  0001 C CNN
+F 1 "+12V" V 10615 2078 50  0000 L CNN
+F 2 "" H 10600 1950 50  0001 C CNN
+F 3 "" H 10600 1950 50  0001 C CNN
+	1    10600 1950
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9600 2100 9750 2100
-Text Label 9750 2100 2    50   ~ 0
+	9800 2550 9950 2550
+Text Label 9950 2550 2    50   ~ 0
 CV22
 Wire Wire Line
 	8700 1750 8600 1750
 Wire Wire Line
 	8700 1750 8900 1750
 Connection ~ 8700 1750
-Text Label 9600 1900 0    50   ~ 0
+Text Label 9800 2750 0    50   ~ 0
 WSPulse2
 Wire Wire Line
-	9750 1900 9600 1900
+	9950 2750 9800 2750
 Wire Wire Line
 	8700 2450 8700 1750
 $Comp
-L Connector_Generic:Conn_02x09_Odd_Even J?
+L Connector_Generic:Conn_02x10_Odd_Even J?
 U 1 1 5DE3372F
-P 9950 2300
+P 10150 2250
 AR Path="/5DB9B31E/5DE3372F" Ref="J?"  Part="1" 
 AR Path="/5DE037B7/5DE3372F" Ref="J?"  Part="1" 
 AR Path="/5DE3372F" Ref="J1"  Part="1" 
-F 0 "J1" H 10000 1693 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 10000 1784 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x09_P2.54mm_Horizontal" H 9950 2300 50  0001 C CNN
-F 3 "~" H 9950 2300 50  0001 C CNN
-F 4 "Mounted at the bottom side" H 10000 1875 50  0001 C CNB "Note"
-F 5 "Interconnection with the controls PCB" H 10000 1966 50  0001 C CIN "Description"
-	1    9950 2300
+F 0 "J1" H 10200 1643 50  0000 C CNN
+F 1 "Conn_02x09_Odd_Even" H 10200 1734 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Horizontal" H 10150 2250 50  0001 C CNN
+F 3 "~" H 10150 2250 50  0001 C CNN
+F 4 "Mounted at the bottom side" H 10200 1825 50  0001 C CNB "Note"
+F 5 "Interconnection with the controls PCB" H 10200 1916 50  0001 C CIN "Description"
+	1    10150 2250
 	1    0    0    -1  
 $EndComp
-Text Label 10250 1900 0    50   ~ 0
+Text Label 10450 2750 0    50   ~ 0
 Freq1
 Wire Wire Line
-	10250 1900 10400 1900
+	10450 2750 10600 2750
 $Comp
 L power:-12V #PWR?
 U 1 1 5DE33746
-P 10400 2500
+P 10600 2150
 AR Path="/5DB9B31E/5DE33746" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5DE33746" Ref="#PWR?"  Part="1" 
 AR Path="/5DE33746" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 10400 2600 50  0001 C CNN
-F 1 "-12V" V 10415 2628 50  0000 L CNN
-F 2 "" H 10400 2500 50  0001 C CNN
-F 3 "" H 10400 2500 50  0001 C CNN
-	1    10400 2500
-	0    1    -1   0   
+F 0 "#PWR03" H 10600 2250 50  0001 C CNN
+F 1 "-12V" V 10615 2278 50  0000 L CNN
+F 2 "" H 10600 2150 50  0001 C CNN
+F 3 "" H 10600 2150 50  0001 C CNN
+	1    10600 2150
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10250 2500 10400 2500
+	10450 2150 10600 2150
 Wire Wire Line
-	9750 2500 9600 2500
-Text Label 9600 2500 0    50   ~ 0
+	9950 2150 9800 2150
+Text Label 9800 2150 0    50   ~ 0
 WSSaw1
 Wire Wire Line
-	10250 2200 10400 2200
-Text Label 10250 2300 0    50   ~ 0
+	10450 2450 10600 2450
+Text Label 10450 2350 0    50   ~ 0
 WSSaw2
 Wire Wire Line
-	10400 2300 10250 2300
+	10600 2350 10450 2350
 Wire Wire Line
-	9600 2600 9750 2600
-Text Label 9750 2600 2    50   ~ 0
+	9800 2050 9950 2050
+Text Label 9950 2050 2    50   ~ 0
 WS2
 Wire Wire Line
-	10250 2600 10400 2600
-Text Label 10250 2600 0    50   ~ 0
+	10450 2050 10600 2050
+Text Label 10450 2050 0    50   ~ 0
 WSPulse1
-Text Label 9750 2000 2    50   ~ 0
+Text Label 9950 2650 2    50   ~ 0
 CV11
 Wire Wire Line
-	9600 2000 9750 2000
+	9800 2650 9950 2650
 Wire Wire Line
-	9600 2300 9750 2300
-Text Label 9750 2300 2    50   ~ 0
+	9800 2350 9950 2350
+Text Label 9950 2350 2    50   ~ 0
 Out2
 $Comp
 L power:GND #PWR?
 U 1 1 5E2B3075
-P 9600 2700
+P 9800 1950
 AR Path="/5DB9B31E/5E2B3075" Ref="#PWR?"  Part="1" 
 AR Path="/5DE037B7/5E2B3075" Ref="#PWR?"  Part="1" 
 AR Path="/5E2B3075" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 9600 2450 50  0001 C CNN
-F 1 "GND" H 9605 2527 50  0000 C CNN
-F 2 "" H 9600 2700 50  0001 C CNN
-F 3 "" H 9600 2700 50  0001 C CNN
-	1    9600 2700
-	0    1    1    0   
+F 0 "#PWR0101" H 9800 1700 50  0001 C CNN
+F 1 "GND" H 9805 1777 50  0000 C CNN
+F 2 "" H 9800 1950 50  0001 C CNN
+F 3 "" H 9800 1950 50  0001 C CNN
+	1    9800 1950
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	9750 2700 9600 2700
+	9950 1950 9800 1950
 $Comp
 L Transistor_BJT:MMBT3904 Q1
 U 1 1 5E1FF626
@@ -1785,4 +1785,6 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4200 4000 50  000
 	1    4200 4000
 	-1   0    0    1   
 $EndComp
+NoConn ~ 9950 1850
+NoConn ~ 10450 1850
 $EndSCHEMATC
