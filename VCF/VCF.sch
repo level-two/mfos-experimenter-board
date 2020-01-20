@@ -873,7 +873,7 @@ F 1 "10u" H 9818 3955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 9738 3850 50  0001 C CNN
 F 3 "~" H 9700 4000 50  0001 C CNN
 	1    9700 4000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR021

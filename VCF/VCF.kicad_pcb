@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (user_trace_width 0.8)
     (trace_clearance 0.2)
@@ -1830,7 +1830,7 @@
   )
 
   (module Capacitor_SMD:C_Elec_6.3x5.4 (layer F.Cu) (tedit 5BC8D926) (tstamp 5DF6B855)
-    (at 108.712 64.516 90)
+    (at 108.712 64.516 270)
     (descr "SMD capacitor, aluminum electrolytic nonpolar, 6.3x5.4mm")
     (tags "capacitor electrolyic nonpolar")
     (path /5DFB53A4)
@@ -1873,10 +1873,10 @@
     (fp_line (start -2.3 -3.3) (end 3.3 -3.3) (layer F.Fab) (width 0.1))
     (fp_line (start 3.3 -3.3) (end 3.3 3.3) (layer F.Fab) (width 0.1))
     (fp_circle (center 0 0) (end 3.15 0) (layer F.Fab) (width 0.1))
-    (pad 2 smd roundrect (at 2.5375 0 90) (size 3.325 1.6) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.15625)
-      (net 15 GND))
-    (pad 1 smd roundrect (at -2.5375 0 90) (size 3.325 1.6) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.15625)
+    (pad 2 smd roundrect (at 2.5375 0 270) (size 3.325 1.6) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.15625)
       (net 17 -12V))
+    (pad 1 smd roundrect (at -2.5375 0 270) (size 3.325 1.6) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.15625)
+      (net 15 GND))
     (model ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_Elec_6.3x5.4.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))

@@ -1696,7 +1696,7 @@ F 0 "J1" H 10200 1643 50  0000 C CNN
 F 1 "Conn_02x09_Odd_Even" H 10200 1734 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Horizontal" H 10150 2250 50  0001 C CNN
 F 3 "~" H 10150 2250 50  0001 C CNN
-F 4 "Mounted at the bottom side" H 10200 1825 50  0001 C CNB "Note"
+F 4 "" H 10200 1825 50  0001 C CNB "Note"
 F 5 "Interconnection with the controls PCB" H 10200 1916 50  0001 C CIN "Description"
 	1    10150 2250
 	1    0    0    -1  
