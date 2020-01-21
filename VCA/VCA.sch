@@ -942,22 +942,22 @@ $EndComp
 Wire Wire Line
 	7700 1650 7500 1650
 Wire Wire Line
-	7000 1750 6800 1750
+	6950 1650 6750 1650
 Wire Wire Line
-	7000 1650 6800 1650
+	7000 1750 6800 1750
 Text Label 7500 1650 0    50   ~ 0
 mod00
-Text Label 6800 1750 0    50   ~ 0
+Text Label 6750 1650 0    50   ~ 0
 mod01
-Text Label 7000 1650 2    50   ~ 0
+Text Label 7000 1750 2    50   ~ 0
 mod0vcc
 Wire Wire Line
 	7000 1850 6800 1850
 Text Label 6850 1850 0    50   ~ 0
 in0
 Wire Wire Line
-	7500 1850 7700 1850
-Text Label 7550 1850 0    50   ~ 0
+	6800 2050 7000 2050
+Text Label 6850 2050 0    50   ~ 0
 out0
 Wire Wire Line
 	7700 2250 7500 2250
@@ -976,43 +976,17 @@ mod12
 Text Label 7000 2250 2    50   ~ 0
 mod1vcc
 Wire Wire Line
-	7000 2050 6800 2050
-Text Label 6850 2050 0    50   ~ 0
+	7700 1850 7500 1850
+Text Label 7550 1850 0    50   ~ 0
 in1
 Wire Wire Line
 	7500 2050 7700 2050
 Text Label 7550 2050 0    50   ~ 0
 out1
-$Comp
-L power:GND #PWR07
-U 1 1 5E30D55B
-P 6850 1950
-F 0 "#PWR07" H 6850 1700 50  0001 C CNN
-F 1 "GND" H 6855 1777 50  0000 C CNN
-F 2 "" H 6850 1950 50  0001 C CNN
-F 3 "" H 6850 1950 50  0001 C CNN
-	1    6850 1950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 5E310163
-P 7650 1950
-F 0 "#PWR08" H 7650 1700 50  0001 C CNN
-F 1 "GND" H 7655 1777 50  0000 C CNN
-F 2 "" H 7650 1950 50  0001 C CNN
-F 3 "" H 7650 1950 50  0001 C CNN
-	1    7650 1950
-	0    -1   -1   0   
-$EndComp
 Text Label 7500 1750 0    50   ~ 0
 mod02
 Wire Wire Line
 	7700 1750 7500 1750
-Wire Wire Line
-	6850 1950 7000 1950
-Wire Wire Line
-	7650 1950 7500 1950
 $Comp
 L Connector_Generic:Conn_01x03 J2
 U 1 1 5E35BF67
@@ -1310,5 +1284,31 @@ F 2 "" H 7850 4250 50  0001 C CNN
 F 3 "~" H 7850 4250 50  0001 C CNN
 	1    7850 4250
 	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 1950 7000 1950
+$Comp
+L power:GND #PWR07
+U 1 1 5E30D55B
+P 6850 1950
+F 0 "#PWR07" H 6850 1700 50  0001 C CNN
+F 1 "GND" H 6855 1777 50  0000 C CNN
+F 2 "" H 6850 1950 50  0001 C CNN
+F 3 "" H 6850 1950 50  0001 C CNN
+	1    6850 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 1950 7500 1950
+$Comp
+L power:GND #PWR08
+U 1 1 5E310163
+P 7650 1950
+F 0 "#PWR08" H 7650 1700 50  0001 C CNN
+F 1 "GND" H 7655 1777 50  0000 C CNN
+F 2 "" H 7650 1950 50  0001 C CNN
+F 3 "" H 7650 1950 50  0001 C CNN
+	1    7650 1950
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
