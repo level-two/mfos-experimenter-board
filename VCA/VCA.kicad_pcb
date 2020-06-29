@@ -6,7 +6,7 @@
     (tracks 136)
     (zones 0)
     (modules 41)
-    (nets 37)
+    (nets 36)
   )
 
   (page A4)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.4)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (user_trace_width 1)
     (trace_clearance 0.2)
@@ -129,7 +129,6 @@
   (net 33 "Net-(R27-Pad1)")
   (net 34 "Net-(U2-Pad15)")
   (net 35 "Net-(U2-Pad2)")
-  (net 36 "Net-(J1-Pad1)")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -157,7 +156,6 @@
     (add_net "Net-(C2-Pad2)")
     (add_net "Net-(C7-Pad1)")
     (add_net "Net-(C8-Pad2)")
-    (add_net "Net-(J1-Pad1)")
     (add_net "Net-(R10-Pad1)")
     (add_net "Net-(R11-Pad2)")
     (add_net "Net-(R13-Pad1)")
@@ -1506,7 +1504,7 @@
     (pad 2 thru_hole oval (at 2.54 0 180) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask)
       (net 18 /mod00))
     (pad 1 thru_hole rect (at 0 0 180) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask)
-      (net 36 "Net-(J1-Pad1)"))
+      (net 17 /mod01))
     (model ${KISYS3DMOD}/Connector_IDC.3dshapes/IDC-Header_2x07_P2.54mm_Horizontal.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))

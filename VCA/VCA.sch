@@ -942,12 +942,12 @@ $EndComp
 Wire Wire Line
 	7700 1650 7500 1650
 Wire Wire Line
-	6950 1650 6750 1650
+	7000 1650 6800 1650
 Wire Wire Line
 	7000 1750 6800 1750
 Text Label 7500 1650 0    50   ~ 0
 mod00
-Text Label 6750 1650 0    50   ~ 0
+Text Label 6800 1650 0    50   ~ 0
 mod01
 Text Label 7000 1750 2    50   ~ 0
 mod0vcc
