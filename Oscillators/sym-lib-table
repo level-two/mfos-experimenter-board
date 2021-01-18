@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Oscillators-rescue)(type Legacy)(uri ${KIPRJMOD}/Oscillators-rescue.lib)(options "")(descr ""))
+)

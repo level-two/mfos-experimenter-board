@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Oscillators-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1506,7 +1505,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2800 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM3900:LM3900 IC?
+L Oscillators-rescue:LM3900-LM3900 IC?
 U 2 1 5DE84E8E
 P 6050 4850
 AR Path="/5DB9B31E/5DE84E8E" Ref="IC?"  Part="3" 
@@ -1525,7 +1524,7 @@ F 8 "these devices consist of four independent high-gain frequency-compensated n
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM3900:LM3900 IC?
+L Oscillators-rescue:LM3900-LM3900 IC?
 U 5 1 5DE33710
 P 4400 1850
 AR Path="/5DB9B31E/5DE33710" Ref="IC?"  Part="2" 
@@ -1544,7 +1543,7 @@ F 8 "these devices consist of four independent high-gain frequency-compensated n
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM3900:LM3900 IC?
+L Oscillators-rescue:LM3900-LM3900 IC?
 U 4 1 5DE33705
 P 5950 1850
 AR Path="/5DB9B31E/5DE33705" Ref="IC?"  Part="3" 
@@ -1563,7 +1562,7 @@ F 8 "these devices consist of four independent high-gain frequency-compensated n
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM3900:LM3900 IC?
+L Oscillators-rescue:LM3900-LM3900 IC?
 U 1 1 5DE3371B
 P 4400 1850
 AR Path="/5DB9B31E/5DE3371B" Ref="IC?"  Part="1" 
@@ -1582,7 +1581,7 @@ F 8 "these devices consist of four independent high-gain frequency-compensated n
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM3900:LM3900 IC?
+L Oscillators-rescue:LM3900-LM3900 IC?
 U 3 1 5DE84E99
 P 4500 4850
 AR Path="/5DB9B31E/5DE84E99" Ref="IC?"  Part="2" 
